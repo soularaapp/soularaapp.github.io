@@ -1,101 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Soulara – Your Spiritual Space</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f9f9fb;
-      color: #1a1a1a;
-    }
-    header {
-      background-color: #ffffff;
-      padding: 1.5rem 2rem;
-      box-shadow: 0 1px 6px rgba(0,0,0,0.1);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.75rem;
-      font-weight: 800;
-      color: #3742fa;
-    }
-    .btn {
-      background-color: #3742fa;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 8px;
-      font-weight: 600;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .hero {
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.125rem;
-      margin-bottom: 2rem;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .founder-section {
-      background-color: #eef0ff;
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-    .founder-section h3 {
-      font-size: 1.75rem;
-      margin-bottom: 1rem;
-    }
-    .founder-section p {
-      max-width: 700px;
-      margin: auto;
-      font-size: 1.05rem;
-      line-height: 1.6;
-    }
-    footer {
-      background-color: #f0f0f5;
-      text-align: center;
-      padding: 1rem 2rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soulara - A Sanctuary for Your Spirit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFBF8; /* Off-white, warm background */
+            color: #4A4A4A; /* Dark gray for text */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Lora', serif;
+        }
+        .celestial-gradient {
+            background: linear-gradient(135deg, #FDEBCD 0%, #FAD9A1 100%); /* Soft tan/gold gradient */
+        }
+        .celestial-gradient-text {
+            background: linear-gradient(135deg, #D4AF37, #C09526); /* Gold text */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-primary {
+            background-color: #8A6F4B; /* Muted, earthy tan */
+            color: #FFFFFF;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #735b3d;
+        }
+        .section-bg-alt {
+            background-color: #F5F1EB; /* Slightly darker neutral */
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .app-mockup {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 2.5rem; /* Corresponds to mockup frame */
+            border: 12px solid #1a1a1a;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Soulara</h1>
-    <a href="#" class="btn">Join the Waitlist</a>
-  </header>
 
-  <section class="hero">
-    <h2>Faith Meets Technology</h2>
-    <p>Discover Soulara: the AI-powered app that helps you interpret scripture, connect with like-minded people, and grow on your spiritual path—wherever you are in your journey.</p>
-    <a href="#" class="btn">Join the Waitlist</a>
-  </section>
+    <!-- Header -->
+    <header class="absolute top-0 left-0 w-full z-10 py-4 px-6 md:px-12">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">Soulara</h1>
+            <a href="#waitlist" class="hidden md:inline-block px-6 py-2 text-sm font-semibold btn-primary rounded-full">Join Waitlist</a>
+        </div>
+    </header>
 
-  <section class="founder-section">
-    <h3>Why Soulara Was Created</h3>
-    <p>Dallion, the founder of Soulara, grew up Christian but found himself drifting away from faith due to life’s distractions. On his journey back to God, he realized that many people are on similar paths—seeking connection, understanding, and spiritual growth in a world that’s constantly shifting. Soulara was created to be that place. A digital home for those seeking meaning, community, and a safe space to explore faith in the modern world.</p>
-  </section>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 pb-10 px-4 overflow-hidden">
+        <div class="absolute inset-0 celestial-gradient opacity-70"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); opacity: 0.3;"></div>
+        
+        <div class="container mx-auto grid md:grid-cols-2 gap-8 items-center relative z-1">
+            <div class="text-center md:text-left">
+                <h2 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">We're not just building an app.</h2>
+                <h2 class="text-4xl md:text-6xl font-bold celestial-gradient-text leading-tight mb-4">We're building a sanctuary.</h2>
+                <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-xl mx-auto md:mx-0">A faith-first social platform for believers, ministries, and the spiritually curious. Connect, grow, and find peace in a space built for your spirit.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#waitlist" class="px-8 py-4 font-bold btn-primary rounded-full text-lg shadow-lg">Request Early Access</a>
+                    <a href="#features" class="px-8 py-4 font-bold bg-white text-gray-700 rounded-full text-lg shadow-lg">Explore Features</a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="relative w-64 md:w-80">
+                    <img src="https://placehold.co/375x812/F5F1EB/4A4A4A?text=Soulara+Feed" alt="Soulara App Mockup" class="app-mockup">
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    &copy; 2025 Soulara. All rights reserved.
-  </footer>
+    <!-- Problem Section -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Has Social Media Lost Its Spirit?</h3>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">Mainstream platforms are filled with distraction and division, leaving people of faith feeling isolated. We deserve a dedicated, modern space to connect, share, and grow.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6">
+                    <div class="text-4xl mb-4">🌪️</div>
+                    <h4 class="font-bold text-xl mb-2">Spiritual Isolation</h4>
+                    <p class="text-gray-600">Users feel overwhelmed by unholy, anti-faith content, with no true digital home for fellowship.</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl mb-4">⛪️</div>
+                    <h4 class="font-bold text-xl mb-2">Disconnected Ministries</h4>
+                    <p class="text-gray-600">Churches stream on platforms that lack community features, spiritual context, and digital tithing.</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl mb-4">🧭</div>
+                    <h4 class="font-bold text-xl mb-2">Judgment & Pressure</h4>
+                    <p class="text-gray-600">The spiritually curious need a welcoming, pressure-free place to ask big questions and explore faith.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features Section -->
+    <section id="features" class="py-16 md:py-24 section-bg-alt">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">A Spiritual Companion in Your Pocket</h3>
+                <p class="text-lg text-gray-600">Tools designed to deepen your connection with God, daily.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature Card 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow">
+                    <h4 class="font-bold text-xl mb-2">AI-Powered Verse Interpretation</h4>
+                    <p class="text-gray-600">Get simple, contextual explanations of scripture based on your denomination and beliefs.</p>
+                </div>
+                <!-- Feature Card 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow">
+                    <h4 class="font-bold text-xl mb-2">Mood-Based Devotionals</h4>
+                    <p class="text-gray-600">Feeling anxious or hopeful? Receive instant, comforting scripture and reflection.</p>
+                </div>
+                <!-- Feature Card 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow">
+                    <h4 class="font-bold text-xl mb-2">Faith-Centered Feed</h4>
+                    <p class="text-gray-600">Post prayers, reflections, and testimonies without toxicity. Just truth and encouragement.</p>
+                </div>
+                <!-- Feature Card 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow">
+                    <h4 class="font-bold text-xl mb-2">Shareable Verse Cards</h4>
+                    <p class="text-gray-600">One-tap share of beautifully designed verse templates to your other social platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Churches Section -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div class="flex justify-center">
+                 <div class="relative w-64 md:w-80">
+                    <img src="https://placehold.co/375x812/F5F1EB/4A4A4A?text=Church+Livestream" alt="Soulara Church Profile Mockup" class="app-mockup">
+                </div>
+            </div>
+            <div class="text-center md:text-left">
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">The Digital Home Churches Have Been Waiting For</h3>
+                <p class="text-lg text-gray-600 mb-6">Soulara is more than an app; it's a ministry tool. Connect with your congregation and reach a global audience like never before.</p>
+                <ul class="space-y-4 text-left">
+                    <li class="flex items-start"><span class="text-xl mr-3">✅</span> <span><strong>Verified Church Profiles</strong> with branding, posts & livestream schedules.</span></li>
+                    <li class="flex items-start"><span class="text-xl mr-3">✅</span> <span><strong>Livestream Worship Services</strong> directly in a faith-focused environment.</span></li>
+                    <li class="flex items-start"><span class="text-xl mr-3">✅</span> <span><strong>In-App Tithing & Offerings</strong> — a simple, digital collection plate.</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family & Kids Mode Section -->
+    <section class="py-16 md:py-24 section-bg-alt">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div class="text-center md:text-left">
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Safe, Fun, and Spiritually Formative for Families</h3>
+                <p class="text-lg text-gray-600 mb-6">Introduce faith to the next generation with a parent-controlled experience that's engaging and safe.</p>
+                 <ul class="space-y-4 text-left">
+                    <li class="flex items-start"><span class="text-xl mr-3">🧒</span> <span><strong>Kids Mode:</strong> Animated Bible stories, interactive quizzes, and bedtime devotionals.</span></li>
+                    <li class="flex items-start"><span class="text-xl mr-3">👨‍👩‍👧</span> <span><strong>Family Dashboard:</strong> Track faith journeys together and set daily practices.</span></li>
+                    <li class="flex items-start"><span class="text-xl mr-3">🎒</span> <span><strong>Teen-Friendly Experience:</strong> Journaling, reflections, and mood-based encouragement.</span></li>
+                </ul>
+            </div>
+            <div class="flex justify-center">
+                 <div class="relative w-64 md:w-80">
+                    <img src="https://placehold.co/375x812/FDEBCD/4A4A4A?text=Kids+Mode" alt="Soulara Kids Mode Mockup" class="app-mockup">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder's Story Section -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <img src="https://placehold.co/120x120/8A6F4B/FFFFFF?text=DF" alt="Founder" class="rounded-full mx-auto mb-6">
+            <h3 class="text-3xl font-bold text-gray-800 mb-4">From Disconnection to Divine Purpose</h3>
+            <p class="text-gray-600 italic mb-6">"I realized that while the world has made it easy to connect over entertainment and trends, it hasn’t made it easy to connect over faith. Soulara exists to help people connect over what matters most."</p>
+            <p class="text-gray-700 font-semibold">- Dallion, Founder of Soulara</p>
+        </div>
+    </section>
+
+    <!-- Waitlist / CTA Section -->
+    <section id="waitlist" class="py-16 md:py-24 celestial-gradient">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Join Us in Building the Future of Digital Faith.</h3>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-8">Be the first to know when Soulara launches. Early members get lifetime access to our premium plan for just <span class="font-bold">$7/month.</span></p>
+            <form class="max-w-xl mx-auto flex flex-col sm:flex-row gap-4">
+                <input type="email" placeholder="Enter your email address" class="w-full px-6 py-4 rounded-full border border-transparent focus:outline-none focus:ring-2 focus:ring-[#8A6F4B]" required>
+                <button type="submit" class="px-8 py-4 font-bold btn-primary rounded-full text-lg shadow-lg">Join the Waitlist</button>
+            </form>
+             <p class="text-sm text-gray-600 mt-4">For churches, creators, and potential advisors, please reach out to <a href="mailto:partners@soulara.app" class="underline">partners@soulara.app</a>.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Soulara. All Rights Reserved. A modern cathedral where faith lives, breathes, and connects.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
