@@ -36,17 +36,9 @@
         .section-bg-alt {
             background-color: #F5F1EB; /* Slightly darker neutral */
         }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.4);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        .app-mockup {
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 15px rgba(0,0,0,0.1);
-            border-radius: 2.5rem; /* Corresponds to mockup frame */
-            border: 12px solid #1a1a1a;
-            overflow: hidden;
-            background-color: #F5F1EB; /* Fallback color for the frame */
+        /* This style is for your phone PNGs. It uses a drop-shadow for a realistic effect on transparent images. */
+        .phone-image-shadow {
+           filter: drop-shadow(0 20px 13px rgba(0, 0, 0, 0.15)) drop-shadow(0 8px 5px rgba(0, 0, 0, 0.1));
         }
     </style>
 </head>
@@ -77,11 +69,11 @@
             </div>
             <div class="flex justify-center">
                 <div class="relative w-64 md:w-80">
-                    <!-- === IMAGE UPDATED HERE === -->
+                    <!-- === IMAGE 1 === -->
                     <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPONAME/main/pic1.png" 
-                         alt="Soulara App Mockup" 
-                         class="app-mockup"
-                         onerror="this.onerror=null;this.src='https://placehold.co/375x812/F5F1EB/4A4A4A?text=Image+Not+Found';">
+                         alt="Soulara App on Phone" 
+                         class="phone-image-shadow w-full h-auto"
+                         onerror="this.onerror=null;this.src='https://placehold.co/320x658/FDFBF8/CCCCCC?text=Image+1+Not+Found';">
                 </div>
             </div>
         </div>
@@ -120,26 +112,10 @@
                 <p class="text-lg text-gray-600">Tools designed to deepen your connection with God, daily.</p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Feature Card 1 -->
-                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow">
-                    <h4 class="font-bold text-xl mb-2">AI-Powered Verse Interpretation</h4>
-                    <p class="text-gray-600">Get simple, contextual explanations of scripture based on your denomination and beliefs.</p>
-                </div>
-                <!-- Feature Card 2 -->
-                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow">
-                    <h4 class="font-bold text-xl mb-2">Mood-Based Devotionals</h4>
-                    <p class="text-gray-600">Feeling anxious or hopeful? Receive instant, comforting scripture and reflection.</p>
-                </div>
-                <!-- Feature Card 3 -->
-                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow">
-                    <h4 class="font-bold text-xl mb-2">Faith-Centered Feed</h4>
-                    <p class="text-gray-600">Post prayers, reflections, and testimonies without toxicity. Just truth and encouragement.</p>
-                </div>
-                <!-- Feature Card 4 -->
-                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow">
-                    <h4 class="font-bold text-xl mb-2">Shareable Verse Cards</h4>
-                    <p class="text-gray-600">One-tap share of beautifully designed verse templates to your other social platforms.</p>
-                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow"><h4 class="font-bold text-xl mb-2">AI-Powered Verse Interpretation</h4><p class="text-gray-600">Get simple, contextual explanations of scripture based on your denomination and beliefs.</p></div>
+                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow"><h4 class="font-bold text-xl mb-2">Mood-Based Devotionals</h4><p class="text-gray-600">Feeling anxious or hopeful? Receive instant, comforting scripture and reflection.</p></div>
+                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow"><h4 class="font-bold text-xl mb-2">Faith-Centered Feed</h4><p class="text-gray-600">Post prayers, reflections, and testimonies without toxicity. Just truth and encouragement.</p></div>
+                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow"><h4 class="font-bold text-xl mb-2">Shareable Verse Cards</h4><p class="text-gray-600">One-tap share of beautifully designed verse templates to your other social platforms.</p></div>
             </div>
         </div>
     </section>
@@ -149,7 +125,11 @@
         <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
             <div class="flex justify-center">
                  <div class="relative w-64 md:w-80">
-                    <img src="https://placehold.co/375x812/F5F1EB/4A4A4A?text=Church+Livestream" alt="Soulara Church Profile Mockup" class="app-mockup">
+                    <!-- === IMAGE 2 === -->
+                    <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPONAME/main/pic2.png" 
+                         alt="Soulara Church Profile Mockup" 
+                         class="phone-image-shadow w-full h-auto"
+                         onerror="this.onerror=null;this.src='https://placehold.co/320x658/FDFBF8/CCCCCC?text=Image+2+Not+Found';">
                 </div>
             </div>
             <div class="text-center md:text-left">
@@ -178,7 +158,11 @@
             </div>
             <div class="flex justify-center">
                  <div class="relative w-64 md:w-80">
-                    <img src="https://placehold.co/375x812/FDEBCD/4A4A4A?text=Kids+Mode" alt="Soulara Kids Mode Mockup" class="app-mockup">
+                    <!-- === IMAGE 3 === -->
+                    <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPONAME/main/pic3.png" 
+                         alt="Soulara Kids Mode Mockup" 
+                         class="phone-image-shadow w-full h-auto"
+                         onerror="this.onerror=null;this.src='https://placehold.co/320x658/FDFBF8/CCCCCC?text=Image+3+Not+Found';">
                 </div>
             </div>
         </div>
